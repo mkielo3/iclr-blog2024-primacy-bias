@@ -3,6 +3,11 @@ Supporting code for "It's Time to Move On: Primacy Bias and Why It Helps to Forg
 
 Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't specifically interested in primacy bias on Frozen Lake I would go there.
 
+The main differences are:
+- Removed the StableBaselines dependency but implementing our own simple replay buffer
+- Removed Tyro dependency, accepting this is a research notebook
+- Removed environment parallelization with Gym and instead parallelize with Dask only when necessary
+
 # Motivation
 
 1. Maximize sample efficiency has become a popular trend in reinforcement learning. Increasing the replay ratio is one way to do this. This can sometimes work but risks causing catastrophic memorization. Weight resets are a clever solution first published by [Nikishin et al. in 2022](https://arxiv.org/pdf/2205.07802.pdf). Intuitively, this problem should be related to the degree of stationarity in the environment. Applications might extend beyond reinforcement learning to impact life-long learning agents and transfer learning. These experiments hope to tinker with the idea. 
