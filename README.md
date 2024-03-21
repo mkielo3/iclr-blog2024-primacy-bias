@@ -14,7 +14,7 @@ Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cl
 	- Over lunch
 	- Over night
 
-A lot of reinforcement learning research falls in the "over night" (or longer) bucket, but I'm not convinced that's always necessary.
+A lot of reinforcement learning research is "over night" (or longer), but I'm not convinced that's always necessary.
 
 
 
