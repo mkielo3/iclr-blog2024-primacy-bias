@@ -14,7 +14,14 @@ Supporting code for "It's Time to Move On: Primacy Bias and Why It Helps to Forg
 
 A lot of reinforcement learning research is "over night" (or longer), but I'm not convinced that's always necessary.
 
+# CleanRL
 
+Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't specifically interested in primacy bias on Frozen Lake I would go there.
+
+The main differences are:
+- Removed the StableBaselines dependency but implementing our own simple replay buffer
+- Removed Tyro dependency, accepting this is a research notebook
+- Removed environment parallelization with Gym and instead parallelize with Dask only when necessary
 
 # Run Instructions
 
@@ -26,13 +33,4 @@ A lot of reinforcement learning research is "over night" (or longer), but I'm no
 A single run of 1000 crossings with a replay ratio of 1 completes in about 5s on Colab. Runtime increases linearly with replay ratio.
 
 The main hyper-parameter search discussed in the blogpost was 1875 total trials (5 learning rates, 3 replay ratios, 5 reset frequencies, 25 seeds) and completed in under 2 hours fully utilizing a 32-core 5950X CPU.
-
-# CleanRL
-
-Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't specifically interested in primacy bias on Frozen Lake I would go there.
-
-The main differences are:
-- Removed the StableBaselines dependency but implementing our own simple replay buffer
-- Removed Tyro dependency, accepting this is a research notebook
-- Removed environment parallelization with Gym and instead parallelize with Dask only when necessary
 
