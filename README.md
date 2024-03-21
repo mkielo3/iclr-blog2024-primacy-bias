@@ -7,7 +7,7 @@ Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cl
 
 1. Maximize sample efficiency has become a popular trend in reinforcement learning. Increasing the replay ratio is one way to do this. This can sometimes work but risks causing catastrophic memorization. Weight resets are a clever solution first published by [Nikishin et al. in 2022](https://arxiv.org/pdf/2205.07802.pdf). Intuitively, this problem should be related to the degree of stationarity in the environment. Applications might extend beyond reinforcement learning to impact life-long learning agents. These experiments hope to tinker with the idea. 
 
-2. There is an [old talk on clustering that enjoy by Leland McInnes](https://www.youtube.com/watch?v=ayZQj4llUSU). One point that resonated with me described how data analysis typically takes different time horizons:
+2. There is an old talk on clustering that enjoy by [Leland McInnes](https://www.youtube.com/watch?v=ayZQj4llUSU). One point that resonated with me described how data analysis typically takes different time horizons:
 
 	- Interactive
 	- Over coffee
