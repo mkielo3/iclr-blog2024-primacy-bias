@@ -20,9 +20,9 @@ A lot of reinforcement learning research falls in the "over night" (or longer) b
 
 # Run Instructions
 
-- Colab link:
+- [Colab link](https://colab.research.google.com/drive/1FFHW8Nogc124rDoIQzAuVHAr96iTn3tD#scrollTo=49af6305-9809-41d2-b54d-5cb875351b98)
 	- Contains slight modifications to avoid install any additional dependencies
-- Experiment notebook: 
+- [Experiment notebook](https://github.com/mkielo3/iclr-blog2024-primacy-bias/blob/main/FrozenLake-PrimacyBias-DQN.ipynb)
 - Graphing notebook: @TODO
 
 A single run of 1000 crossings with a replay ratio of 1 completes in about 5s on Colab. Runtime increases linearly with replay ratio.
