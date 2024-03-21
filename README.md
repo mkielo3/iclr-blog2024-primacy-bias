@@ -19,7 +19,7 @@ A lot of reinforcement learning research is "over night" (or longer), but I'm no
 Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't specifically interested in primacy bias on Frozen Lake I would go there.
 
 The main differences are:
-- Removed the StableBaselines dependency but implementing our own simple replay buffer
+- Removed the StableBaselines dependency by implementing our own simple replay buffer
 - Removed Tyro dependency, accepting this is a research notebook
 - Removed environment parallelization with Gym and instead parallelize with Dask only when necessary
 
