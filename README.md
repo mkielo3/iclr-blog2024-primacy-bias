@@ -1,7 +1,7 @@
 # iclr-blog2024-primacy-bias
 Supporting code for "It's Time to Move On: Primacy Bias and Why It Helps to Forget", part of the ICLR 2024 Blog Post Track.
 
-Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't interested in specifically primacy bias on Frozen Lake I would go there.
+Code is derived from [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py), so if you aren't specifically interested in primacy bias on Frozen Lake I would go there.
 
 # Motivation
 
